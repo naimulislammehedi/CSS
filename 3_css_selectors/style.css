@@ -1,0 +1,47 @@
+/* 
+five categoris: 
+- Simple selectors 
+- combinator selectors 
+- pseudo-class selectors 
+- pseudo-elements selectors 
+- attribute selectors
+*/
+
+p {
+    text-align: center;
+    color: red;
+}
+
+/* the css id selector */
+/* an id name cannor start with a number */
+#para1 {
+    text-align: center;
+    color: green;
+}
+
+/* the css class selector */
+.center {
+    text-align: center;
+    color: blue;
+}
+
+.large {
+    text-align: center;
+    font-size: 300%;
+}
+
+/* 
+a class name cannot start with a number
+*/
+
+/* 
+the css universal selector
+*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* the css grouping selector */
+p, h1 {
+    text-align: right;
+}
