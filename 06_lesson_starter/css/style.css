@@ -1,0 +1,19 @@
+body {
+    padding: 10%;
+    font-size: 2rem;
+    /* font-family: monospace; */
+}
+
+/* input, button {
+    font: inherit;
+} */
+
+p {
+    line-height: 1.5;
+    /* letter-spacing: 0.1em; */
+    word-spacing: 0.1em;
+    /* font-weight: 300; */
+    /* font-weight: lighter; */
+    /* font-weight: bolder; */
+    font-style: italic;
+}
