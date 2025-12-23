@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-areas: 
+    "header header"
+    "sidebar content"
+    "footer footer"
+    ;
+    min-height: 100vh;
+    gap: 10px;
+}
+
+/* Assign Areas */
+.header {
+    grid-area: header;
+    background: #ddd;
+    padding: 20px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background: #bbb;
+    padding: 20px;
+}
+
+.content {
+    grid-area: content;
+    background: #bbb;
+    padding: 20px;
+}
+
+.footer {
+    grid-area: footer;
+    background: #eee;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "content"
+      "sidebar"
+      "footer";
+  }
+}
