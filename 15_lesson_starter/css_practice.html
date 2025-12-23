@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Practice</title>
+
+    <style>
+        .container {
+            display: grid;
+            /* display: inline-grid; */
+            
+            background-color: dodgerblue;
+            padding: 5px;
+            height: 400px;
+            gap: 5px;
+
+            /* css grid-template-columns property */
+            grid-template-columns: auto auto auto;
+            /* grid-template-columns: 80px 200px auto; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            /* grid-template-columns: repeat(3, 1fr); */
+            /* grid-template-columns: minmax(80px, 1fr) 150px 150px; */
+            /* grid-template-columns: 70px 70px 70px; */
+
+            /* grid-template-rows: 80px 200px; */
+
+            /* css grid gap */
+            /* column-gap: 50px;
+            row-gap: 50px; */
+            /* gap: 50px; */
+            /* gap: 30px 100px; */
+            /* gap: 5px; */
+
+            /* css grid container - align grid content */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: center; */
+            /* justify-content: start; */
+            /* justify-content: end; */
+            
+            /* align-content: center; */
+            /* align-content: space-evenly; */
+            /* align-content: space-around; */
+            /* align-content: space-between; */
+            /* align-content: start; */
+            /* align-content: end; */
+
+            /* place-content: center; */
+            /* place-content: end space-between; */
+
+            /* CSS Naming Grid Items */
+            /* grid-template-areas: 
+            'myHeader myHeader myHeader myHeader myHeader'
+            ; */
+            /* grid-template-areas: 
+            'myHeader myHeader myHeader . .'; 
+            ; */
+            grid-template-areas: 
+            'myHeader myHeader . . .' 
+            'myHeader myHeader . . .' 
+            ;
+
+
+
+        }
+
+        .container div {
+            background-color: #f1f1f1;
+            color: #000;
+            padding: 10px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .item1  {
+            /* grid-column-start: 1;
+            grid-column-end: 3; */
+
+            /* css grid-colum property */
+            /* grid-column: 1 / span 2; */
+
+            /* grid row-start and grid-row-end */
+            /* grid-row-start: 1;
+            grid-row-end: 3; */
+            /* grid-row: 1 / span 2; */
+
+            /* combine grid-column and grid-row */
+            /* grid-column: 1 / span 2;
+            grid-row: 1 / span 2; */
+
+            grid-area: myHeader;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+</body>
+</html>
